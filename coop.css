@@ -20,7 +20,7 @@ body {
 
 /* Header */
 header {
-    background-color: #e60012; /* Coop's røde farve */
+    background-color: #f7f7f7; /* Coop's røde farve */
     color: white;
     padding: 20px 0;
     display: flex;
@@ -44,7 +44,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #e60012;
     text-decoration: none;
     font-weight: bold;
 }
