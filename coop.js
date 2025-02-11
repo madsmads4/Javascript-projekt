@@ -18,3 +18,11 @@ function showSlides() {
   setTimeout(showSlides, 4000);
 }
 
+    // Select elements
+    const menuButton = document.getElementById('menu-toggle');
+    const menuPanel = document.getElementById('menu-panel');
+
+    // Toggle the menu visibility
+    menuButton.addEventListener('click', () => {
+      menuPanel.classList.toggle('active');
+    });
