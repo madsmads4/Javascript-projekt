@@ -117,7 +117,7 @@ nav ul li a:hover {
   }
 
   .menu-button:hover {
-    background-color: #555;
+    background-color: #e60012;
   }
 
   /* Menu Panel */
@@ -127,8 +127,8 @@ nav ul li a:hover {
   right: 16px;
   width: 200px; /* Ensure square size */
   height: 300px;
-  background-color: white;
-  color: black;
+  background-color: #e60012;
+  color: white;
   border: 2px solid black;
   box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
   padding: 10px;
@@ -141,10 +141,12 @@ nav ul li a:hover {
 
 .menu-panel.active {
   transform: translateX(0); /* Show when active */
+  right: 0;
+  background-color: #e60012;
 }
 
   .menu-panel a {
-    color: black;
+    color: white;
     text-decoration: none;
     padding: 10px 0;
     font-size: 18px;
@@ -156,11 +158,6 @@ nav ul li a:hover {
 
   .menu-panel a:hover {
     color: #555;
-  }
-
-  /* Active class for showing the menu */
-  .menu-panel.active {
-    right: 0;
   }
 
 /* Services Section */

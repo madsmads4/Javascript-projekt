@@ -1,3 +1,5 @@
+
+// Galleri
 let slideIndex = 0;
 showSlides();
 
@@ -18,6 +20,8 @@ function showSlides() {
   setTimeout(showSlides, 4000);
 }
 
+
+// Burger menu
     // Select elements
     const menuButton = document.getElementById('menu-toggle');
     const menuPanel = document.getElementById('menu-panel');
@@ -26,3 +30,20 @@ function showSlides() {
     menuButton.addEventListener('click', () => {
       menuPanel.classList.toggle('active');
     });
+
+let burgerMenu = {
+  menuItems: ["Hjem", "Butikker", "Tjenester", "Kundeservice", "Kontakt"]
+}
+if (burgerMenu.menuItems.length > 0) {
+  for (i = 0; i < burgerMenu.menuItems.length; i++) {
+
+    const node = document.createElement("a");
+    
+    const textnode = document.createTextNode(burgerMenu.menuItems[i]);
+    
+    node.appendChild(textnode);
+    
+    document.getElementById('menu-panel').appendChild(node);
+  }
+}
+
