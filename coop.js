@@ -46,4 +46,3 @@ if (burgerMenu.menuItems.length > 0) {
     document.getElementById('menu-panel').appendChild(node);
   }
 }
-
