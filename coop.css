@@ -365,3 +365,43 @@ footer p {
   @media only screen and (max-width: 300px) {
     .prev, .next,.text {font-size: 11px}
   }
+
+
+  
+/* Style for the image boxes container */
+.image-boxes-container {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Style for individual image boxes */
+.image-box {
+  width: 30%; /* Adjust the width based on how many boxes you want per row */
+  border: 2px solid #ddd; /* Light border like in your slideshow */
+  border-radius: 8px; /* Rounded corners */
+  overflow: hidden; /* Ensures the images do not overflow their container */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Slight shadow for a lifted effect */
+}
+
+.image-box img {
+  width: 100%; /* Ensures images fill the box */
+  height: auto; /* Maintains aspect ratio */
+  display: block;
+}
+
+/* Make the boxes responsive for smaller screens */
+@media screen and (max-width: 768px) {
+  .image-box {
+      width: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .image-box {
+      width: 100%;
+  }
+}
