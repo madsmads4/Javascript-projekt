@@ -37,12 +37,12 @@ let burgerMenu = { // Her laver vi et objekt
 if (burgerMenu.menuItems.length > 0) { // her laver vi en if statment som checker om vores objekt er større ind 0
   for (i = 0; i < burgerMenu.menuItems.length; i++) { // for loop
 
-    const node = document.createElement("a"); // her laver en node hvor vi laver et reference element
+    const node = document.createElement("a"); // her laver en node hvor vi laver et html element som i dette tilfælde er "a" node gemmer vores "a" som vi så kan manipulere
     
     const textnode = document.createTextNode(burgerMenu.menuItems[i]); // her laver vi en ny variable som indeholder tekst som er det samme som hvad der er i arrayed
     
-    node.appendChild(textnode); // Den tager vores "a" variable og tilføjer den tekst som står i arrayed
+    node.appendChild(textnode); // Den tager vores ny textnode som vi oprettede i forige linje som et "child" af vores eksisterende DOM-element
     
-    menuPanel.appendChild(node); // har refere vi til html for at vise hvor vi vil have vores tekst hende derfor tilføjer vores child node til menu-panel
+    menuPanel.appendChild(node); // har refere vi til et DOM element i vores html for at vise hvor vi vil have vores tekst hende derfor tilføjer vores child node til menu-panel
   }
 }
